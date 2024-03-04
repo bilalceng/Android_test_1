@@ -2,7 +2,13 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
+      <entry key="CompareResourceStringTest">
+        <State />
+      </entry>
       <entry key="app">
+        <State />
+      </entry>
+      <entry key="resource_string_is_equal_to_entered_word_return_true()">
         <State />
       </entry>
     </value>

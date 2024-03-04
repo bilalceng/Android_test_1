@@ -1,4 +1,4 @@
-package com.bilalberekgm.unittest
+package com.bilalberekgm.unittest.testOnJvm
 
 object RegistrationObject {
 
