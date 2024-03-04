@@ -19,6 +19,11 @@ object HomeWork {
         }
 
         fun checkBraces(word: String): Boolean{
+            word.toCharArray().forEach {
+                if(it == ')'){
+                    return false
+                }
+            }
             return word.count { it == '(' } == word.count{ it == ')'}
         }
     }

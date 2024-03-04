@@ -24,7 +24,7 @@ class HomeWorkTest{
 
     }
     @Test
-    fun paranthesis_not_balanced(){
+    fun brackets_not_balanced(){
         val word = "((word)))"
         val expectedBoolean = false
         val result = HomeWork.checkBraces(word)
@@ -32,9 +32,17 @@ class HomeWorkTest{
     }
 
     @Test
-    fun paranthesis_balanced(){
+    fun brackets_balanced(){
         val word = "((word))"
         val expectedBoolean = true
+        val result = HomeWork.checkBraces(word)
+        assertThat(result).isEqualTo(expectedBoolean)
+    }
+
+    @Test
+    fun first_bracket_closed_return_false(){
+        val word = ")(word))"
+        val expectedBoolean = false
         val result = HomeWork.checkBraces(word)
         assertThat(result).isEqualTo(expectedBoolean)
     }
